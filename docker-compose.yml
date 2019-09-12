@@ -4,8 +4,8 @@ services:
   knn_sv:
     container_name: knn_sv
     image: 0eta0/har-knn-api:latest
-    # logging:
-    #   driver: journald
+    logging:
+      driver: journald
   tools_nginx:
     container_name: tools_nginx
     build:
@@ -19,5 +19,5 @@ services:
       - knn_sv
     depends_on:
       - knn_sv
-    # logging:
-    #   driver: journald
+    logging:
+      driver: journald
