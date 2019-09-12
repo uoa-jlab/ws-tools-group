@@ -14,7 +14,7 @@ services:
     volumes:
       - ./sites-config/:/etc/nginx/sites-config/:ro
     ports:
-      - 8912:8912
+      - 8911:8911
     links:
       - knn_sv
     depends_on:

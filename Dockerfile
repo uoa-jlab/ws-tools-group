@@ -4,6 +4,6 @@ WORKDIR /etc/nginx
 
 COPY ./nginx.conf .
 
-EXPOSE 8912
+EXPOSE 8911
 
 CMD ["nginx", "-g", "daemon off;"]
