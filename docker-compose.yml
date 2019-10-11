@@ -4,6 +4,8 @@ services:
   knn_sv:
     container_name: knn_sv
     image: 0eta0/har-knn-api:latest
+    volumes:
+      - ./db/:/knn/db/
     logging:
       driver: journald
   tools_nginx:
